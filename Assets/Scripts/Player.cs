@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     public Rigidbody2D rigidBody;
     public new BoxCollider2D collider;
+    [HideInInspector]
+    public float basePushbackSpeed;
 
     [HideInInspector]
     public Vector2 nextFrameMove = Vector2.zero;
@@ -33,6 +35,6 @@ public class Player : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        nextFrameMove += (Vector2.right * 3 * Time.deltaTime);
+        nextFrameMove += (Vector2.right * basePushbackSpeed * GameManager.globalSpeedMultiplier * Time.deltaTime);
     }
 }

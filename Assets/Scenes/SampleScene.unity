@@ -413,6 +413,7 @@ MonoBehaviour:
   background: {fileID: 958163355}
   scoreUpPerTime: 0.03333334
   debrisSpawnTimeDelayRange: {x: 1.5, y: 2}
+  baseDebrisSpeed: 8
   debrisPrefabs:
   - {fileID: 7207914403438897116, guid: c56f26db98c95044792fe80fe87c2c68, type: 3}
 --- !u!4 &257334093
@@ -887,6 +888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 958163359}
+  baseSpeed: 0.15
 --- !u!4 &958163357
 Transform:
   m_ObjectHideFlags: 0
@@ -1125,6 +1127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 1035659164}
   collider: {fileID: 1035659165}
+  basePushbackSpeed: 0
   nextFrameMove: {x: 0, y: 0}
 --- !u!1 &1367056830
 GameObject:

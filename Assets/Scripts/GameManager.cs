@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public BackgroundScroll background;
     public float scoreUpPerTime = 3.0f / 60.0f;
     public Vector2 debrisSpawnTimeDelayRange;
+    public float baseDebrisSpeed = 8;
+    public float maxGlobalSpeedMultiplier = 2.5f;
 
     public List<Debris> debrisPrefabs;
     private List<Debris> managedDebris = new List<Debris>();
@@ -23,6 +25,8 @@ public class GameManager : MonoBehaviour
 
     bool Playing() => !hud.retryButton.gameObject.activeSelf && !hud.pressStartText.gameObject.activeSelf;
 
+    public static float globalSpeedMultiplier = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +34,7 @@ public class GameManager : MonoBehaviour
         hud.pressStartText.gameObject.SetActive(true);
         nextDebrisSpawnTime = Random.Range(debrisSpawnTimeDelayRange.x, debrisSpawnTimeDelayRange.y);
         background.enabled = false;
+        player.basePushbackSpeed = baseDebrisSpeed;
         dinosaur.onDebrisOverlapped += (collider, debris) =>
         {
             debrisToDelete.Add(debris);
@@ -75,7 +80,7 @@ public class GameManager : MonoBehaviour
 
         foreach(Debris debris in managedDebris)
         {
-            debris.rigidBody.MovePosition(debris.rigidBody.position + (Vector2.right * 3 * Time.deltaTime));
+            debris.rigidBody.MovePosition(debris.rigidBody.position + (Vector2.right * baseDebrisSpeed * globalSpeedMultiplier * Time.deltaTime));
         }
 
         foreach (Debris debris in debrisToDelete)
@@ -110,6 +115,11 @@ public class GameManager : MonoBehaviour
         {
             scoreUpTimer -= scoreUpPerTime;
             score += 1;
+            if(score % 150 == 0)
+            {
+                globalSpeedMultiplier *= 1.1f;
+                globalSpeedMultiplier = Mathf.Min(globalSpeedMultiplier, maxGlobalSpeedMultiplier);
+            }
         }
         hud.SetScoreText(score, highscore);
     }
@@ -140,7 +150,7 @@ public class GameManager : MonoBehaviour
             highscore = score;
         }
         player.transform.position = new Vector2(-3, 0);
-
+        globalSpeedMultiplier = 1;
         score = 0;
     }
 }
