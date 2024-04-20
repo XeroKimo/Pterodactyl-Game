@@ -412,8 +412,9 @@ MonoBehaviour:
   dinosaur: {fileID: 408195811}
   background: {fileID: 958163355}
   scoreUpPerTime: 0.03333334
-  debrisSpawnTimeDelayRange: {x: 1.5, y: 2}
+  debrisSpawnTimeDelayRange: {x: 1.2, y: 1.6}
   baseDebrisSpeed: 8
+  maxGlobalSpeedMultiplier: 2.5
   debrisPrefabs:
   - {fileID: 7207914403438897116, guid: c56f26db98c95044792fe80fe87c2c68, type: 3}
 --- !u!4 &257334093
