@@ -1024,7 +1024,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c87bab044eb15e4ba5bfa092de1cfe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1035659164}
+  rigidBody: {fileID: 1035659164}
+  collider: {fileID: 1035659165}
   nextFrameMove: {x: 0, y: 0}
 --- !u!1 &1367056830
 GameObject:

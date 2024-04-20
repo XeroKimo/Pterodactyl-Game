@@ -55,15 +55,11 @@ public class GameManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 player.nextFrameMove += Vector2.up;
-                //playerPosition += Vector3.up;
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 player.nextFrameMove -= Vector2.up;
-                //playerPosition -= Vector3.up;
             }
-            //playerPosition.y = Mathf.Clamp(playerPosition.y, -1, 1);
-            //player.transform.position = playerPosition;
         }
     }
 
@@ -75,7 +71,7 @@ public class GameManager : MonoBehaviour
 
         foreach(Debris debris in managedDebris)
         {
-            debris.rb.MovePosition(debris.rb.position + (Vector2.right * 3 * Time.deltaTime));
+            debris.rigidBody.MovePosition(debris.rigidBody.position + (Vector2.right * 3 * Time.deltaTime));
         }
 
         foreach (Debris debris in debrisToDelete)
@@ -83,6 +79,17 @@ public class GameManager : MonoBehaviour
             managedDebris.Remove(debris);
             Destroy(debris.gameObject);
         }
+
+        if(player.nextFrameMove.y != 0)
+        {
+            RaycastHit2D[] results = new RaycastHit2D[1];
+            if(player.collider.Cast(new Vector2(0, player.nextFrameMove.y), results, 1) > 0)
+            {
+                if (results[0].normal.y != 0)
+                    player.nextFrameMove.y = 0;
+            }
+        }
+
         debrisToDelete.Clear();
 
         debrisSpawnTimer += Time.fixedDeltaTime;

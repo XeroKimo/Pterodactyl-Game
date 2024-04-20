@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    public Rigidbody2D rigidBody;
+    public new BoxCollider2D collider;
+
     [HideInInspector]
     public Vector2 nextFrameMove = Vector2.zero;
 
@@ -22,10 +24,11 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 nextPosition = rb.position + nextFrameMove;
+        Vector2 nextPosition = rigidBody.position + nextFrameMove;
         nextPosition.y = Mathf.Clamp(nextPosition.y, -1, 1);
-        rb.MovePosition(nextPosition);
+        rigidBody.MovePosition(nextPosition);
         nextFrameMove = Vector2.zero;
+
     }
 
     private void OnCollisionStay2D(Collision2D collision)

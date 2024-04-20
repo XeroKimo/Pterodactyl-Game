@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Debris : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    public Rigidbody2D rigidBody;
+    public new BoxCollider2D collider;
 
     // Start is called before the first frame update
     void Start()
