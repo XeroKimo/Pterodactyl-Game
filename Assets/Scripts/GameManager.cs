@@ -7,12 +7,15 @@ public class GameManager : MonoBehaviour
     public HUDScreen hud;
     public Player player;
     public Dinosaur dinosaur;
+    public BackgroundScroll background;
     public float scoreUpPerTime = 3.0f / 60.0f;
+    public Vector2 debrisSpawnTimeDelayRange;
 
     public List<Debris> debrisPrefabs;
     private List<Debris> managedDebris = new List<Debris>();
     private List<Debris> debrisToDelete = new List<Debris>();
 
+    private float nextDebrisSpawnTime;
     private float debrisSpawnTimer = 0;
     private float scoreUpTimer = 0;
     private int score;
@@ -25,13 +28,15 @@ public class GameManager : MonoBehaviour
     {
         hud.retryButton.gameObject.SetActive(false);
         hud.pressStartText.gameObject.SetActive(true);
+        nextDebrisSpawnTime = Random.Range(debrisSpawnTimeDelayRange.x, debrisSpawnTimeDelayRange.y);
+        background.enabled = false;
         dinosaur.onDebrisOverlapped += (collider, debris) =>
         {
             debrisToDelete.Add(debris);
         };
         dinosaur.onPlayerOverlapped += (collider) =>
         {
-            hud.retryButton.gameObject.SetActive(true);
+            GameOver();
         };
 
         hud.retryButton.onClick.AddListener(() =>
@@ -51,7 +56,6 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Vector3 playerPosition = player.transform.position;
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 player.nextFrameMove += Vector2.up;
@@ -93,10 +97,11 @@ public class GameManager : MonoBehaviour
         debrisToDelete.Clear();
 
         debrisSpawnTimer += Time.fixedDeltaTime;
-        if(debrisSpawnTimer > 1)
+        if(debrisSpawnTimer > nextDebrisSpawnTime)
         {
             Debris newDebris = Instantiate(debrisPrefabs[Random.Range(0, debrisPrefabs.Count)], new Vector3(-15, Random.Range(-1, 2), 0), Quaternion.identity);
             managedDebris.Add(newDebris);
+            nextDebrisSpawnTime = Random.Range(debrisSpawnTimeDelayRange.x, debrisSpawnTimeDelayRange.y);
             debrisSpawnTimer = 0;
         }
         scoreUpTimer += Time.fixedDeltaTime;
@@ -109,8 +114,15 @@ public class GameManager : MonoBehaviour
         hud.SetScoreText(score, highscore);
     }
 
+    private void GameOver()
+    {
+        hud.retryButton.gameObject.SetActive(true);
+        background.enabled = false;
+    }
+
     private void Restart()
     {
+        background.enabled = true;
         hud.retryButton.gameObject.SetActive(false);
         hud.pressStartText.gameObject.SetActive(false);
 
