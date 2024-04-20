@@ -7,6 +7,7 @@ public class Dinosaur : MonoBehaviour
 {
     public Action<Collider2D, Debris> onDebrisOverlapped;
     public Action<Collider2D> onPlayerOverlapped;
+    public AudioSource suckAudio;
     
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class Dinosaur : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debris debris = collision.gameObject.GetComponent<Debris>();
+        suckAudio.Play();
         if (debris)
         {
             onDebrisOverlapped?.Invoke(collision, debris);
