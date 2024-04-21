@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     public float maxGlobalSpeedMultiplier = 2.5f;
 
     public List<Debris> debrisPrefabs;
+
+    public AudioSource TheDinoSong;
+
     private List<Debris> managedDebris = new List<Debris>();
     private List<Debris> debrisToDelete = new List<Debris>();
 
@@ -24,6 +27,7 @@ public class GameManager : MonoBehaviour
     private float doubleDebrisTimer = 0;
     private int? doubleDebrisLane;
     private float scoreUpTimer = 0;
+    private float restartTimer = 0;
     private int score;
     private int? highscore;
 
@@ -45,6 +49,9 @@ public class GameManager : MonoBehaviour
         };
         dinosaur.onPlayerOverlapped += (collider) =>
         {
+            //play animation
+            dinosaur.End();
+            player.End();
             GameOver();
         };
 
@@ -60,8 +67,13 @@ public class GameManager : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
-                Restart();
+                if(restartTimer >= 25)
+                {
+                    Restart();
+                }
             }
+            //Debug.Log(restartTimer);
+            restartTimer +=  Time.fixedDeltaTime;
         }
         else
         {
@@ -136,6 +148,9 @@ public class GameManager : MonoBehaviour
             {
                 globalSpeedMultiplier *= 1.1f;
                 globalSpeedMultiplier = Mathf.Min(globalSpeedMultiplier, maxGlobalSpeedMultiplier);
+                dinosaur.animator.speed = globalSpeedMultiplier;
+                player.animator.speed = globalSpeedMultiplier;
+                TheDinoSong.pitch = globalSpeedMultiplier;
             }
         }
         hud.SetScoreText(score, highscore);
@@ -149,9 +164,12 @@ public class GameManager : MonoBehaviour
 
     private void Restart()
     {
+        restartTimer = 0;
+        //Debug.Log("Restarting");
         background.enabled = true;
         hud.retryButton.gameObject.SetActive(false);
         hud.pressStartText.gameObject.SetActive(false);
+        TheDinoSong.pitch = 1;
 
         foreach(Debris debris in managedDebris)
         {
@@ -166,7 +184,10 @@ public class GameManager : MonoBehaviour
         {
             highscore = score;
         }
-        player.transform.position = new Vector2(-3, 0);
+
+        dinosaur.Restart();
+        player.Restart();
+        
         globalSpeedMultiplier = 1;
         score = 0;
     }
