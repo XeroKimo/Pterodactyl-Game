@@ -30,6 +30,16 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (nextFrameMove.y != 0)
+        {
+            RaycastHit2D[] results = new RaycastHit2D[1];
+
+            if (collider.Cast(new Vector2(0, nextFrameMove.y), results, 1) > 0)
+            {
+                if (results[0].normal.y != 0)
+                    nextFrameMove.y = 0;
+            }
+        }
         Vector2 nextPosition = rigidBody.position + nextFrameMove;
         nextPosition.y = Mathf.Clamp(nextPosition.y, -1, 1);
         if(nextPosition.y != rigidBody.position.y)

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public BackgroundScroll background;
     public float scoreUpPerTime = 3.0f / 60.0f;
     public Vector2 debrisSpawnTimeDelayRange;
+    public Vector2 doubleDebrisSpawnTimeDelayRange = new Vector2(0.2f, 0.5f);
     public float baseDebrisSpeed = 8;
     public float maxGlobalSpeedMultiplier = 2.5f;
 
@@ -19,6 +20,9 @@ public class GameManager : MonoBehaviour
 
     private float nextDebrisSpawnTime;
     private float debrisSpawnTimer = 0;
+    private float nextDoubleDebrisSpawnTime;
+    private float doubleDebrisTimer = 0;
+    private int? doubleDebrisLane;
     private float scoreUpTimer = 0;
     private int score;
     private int? highscore;
@@ -89,26 +93,39 @@ public class GameManager : MonoBehaviour
             Destroy(debris.gameObject);
         }
 
-        if(player.nextFrameMove.y != 0)
-        {
-            RaycastHit2D[] results = new RaycastHit2D[1];
-            if(player.collider.Cast(new Vector2(0, player.nextFrameMove.y), results, 1) > 0)
-            {
-                if (results[0].normal.y != 0)
-                    player.nextFrameMove.y = 0;
-            }
-        }
-
         debrisToDelete.Clear();
 
         debrisSpawnTimer += Time.fixedDeltaTime;
         if(debrisSpawnTimer > nextDebrisSpawnTime)
         {
-            Debris newDebris = Instantiate(debrisPrefabs[Random.Range(0, debrisPrefabs.Count)], new Vector3(-15, Random.Range(-1, 2), 0), Quaternion.identity);
+            int selectedLane = Random.Range(-1, 2);
+            Debris newDebris = Instantiate(debrisPrefabs[Random.Range(0, debrisPrefabs.Count)], new Vector3(-15, selectedLane, 0), Quaternion.identity);
             managedDebris.Add(newDebris);
             nextDebrisSpawnTime = Random.Range(debrisSpawnTimeDelayRange.x, debrisSpawnTimeDelayRange.y);
             debrisSpawnTimer = 0;
+
+            if(Random.value <= 0.33f)
+            {
+                doubleDebrisLane = selectedLane;
+                while (doubleDebrisLane.Value == selectedLane)
+                    doubleDebrisLane = Random.Range(-1, 2);
+
+                nextDoubleDebrisSpawnTime = Random.Range(doubleDebrisSpawnTimeDelayRange.x, doubleDebrisSpawnTimeDelayRange.y);
+                doubleDebrisTimer = 0;
+            }
         }
+
+        if(doubleDebrisLane.HasValue)
+        {
+            doubleDebrisTimer += Time.fixedDeltaTime;
+            if (doubleDebrisTimer > nextDoubleDebrisSpawnTime)
+            {
+                Debris newDebris = Instantiate(debrisPrefabs[Random.Range(0, debrisPrefabs.Count)], new Vector3(-15, doubleDebrisLane.Value, 0), Quaternion.identity);
+                managedDebris.Add(newDebris);
+                doubleDebrisLane = null;
+            }
+        }
+
         scoreUpTimer += Time.fixedDeltaTime;
 
         if(scoreUpTimer >= scoreUpPerTime)
