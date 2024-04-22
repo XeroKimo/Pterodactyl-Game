@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
+using UnityEngine.Animations;
 using UnityEngine;
 
 public class Dinosaur : MonoBehaviour
@@ -11,7 +11,6 @@ public class Dinosaur : MonoBehaviour
     public AudioSource suckAudio;
 
     public Animator animator;
-    private AnimatorController controller;
     
     // Start is called before the first frame update
     void Start()

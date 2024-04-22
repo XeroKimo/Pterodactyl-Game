@@ -1,0 +1,809 @@
+fileFormatVersion: 2
+guid: 3a36ef899df03d04dac1aad1219d430d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 33
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DinoIntroSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1030
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689dd67694e0b894a95daffcd7ab20a6
+      internalID: 1859179312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1030
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd912885af44eda488265386e1163236
+      internalID: 177471627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_2
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1030
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7025af0c8c40f4eb5124d84dc4d49e
+      internalID: -1578913964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_3
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1030
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cc18db709987d4ba22a6d8bf47c094
+      internalID: 537136926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_4
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1030
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697e0dfbd4a5c1747ae7391ab41c0f7e
+      internalID: 181110811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 1030
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0a670943b23a7419903d1529870dc6
+      internalID: -1238413551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 824
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ca5a3b4a8439e448a87a367cdbfd37
+      internalID: -1422559450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_7
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 824
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f30f4e1bfbc2ed4f9f382c8001adbc9
+      internalID: -1717836089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_8
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 824
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bff94342c9ebfe4d8f58bb0c0d91ab2
+      internalID: -714364969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_9
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 824
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bb2887c697f0a4aa9efbd87aa2f4be
+      internalID: 168314083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_10
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 824
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a8fd37203b0c046a131bbc46117b0c
+      internalID: -587508160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 824
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf3ec93d9d559347a93d402b29bc55a
+      internalID: -256530042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 618
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18aa1eb1a4225842a924b4c81070d58
+      internalID: -230411945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_13
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 618
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c371f77ee059d5947abf2d93da0d6db2
+      internalID: 1448825012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_14
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 618
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fadb03b534ca2743b6389cd2f5f584d
+      internalID: 2108307427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_15
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 618
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0ac124802a06c448f9d1801be98fc7
+      internalID: 1054084148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_16
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 618
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a845bf380212b429acfe5f7c5931e8
+      internalID: 523219977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 618
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87881d4745773254a800ffe64b46a093
+      internalID: 1318320106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef9bfeaae7a9c642be82df291e5776e
+      internalID: 1282301975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_19
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 412
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a1e5361d9cfa0409a12d0a57964a1f
+      internalID: -1544218836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_20
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 412
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b230853b354972148bdfe8aa89fd03c5
+      internalID: -1857604996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_21
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 412
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce1f7546011b41488aed438f69a23e3
+      internalID: -181900864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_22
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 412
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d9edbe32afee149ac8bd029ee21bc9
+      internalID: 365407426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 412
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd9c3a63fd4e90479a70f0235302787
+      internalID: -3969151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 206
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e05768fed39d9447a045145ddf1045b
+      internalID: 875541805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_25
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 206
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5fecce499eb34243b66af5734ebcaaa
+      internalID: 573849807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_26
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 206
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a38c08eb68011f4b90d7e12d4a729c9
+      internalID: 194757384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_27
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 206
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f139b5071921aef4f878bffa0635a836
+      internalID: -404247823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_28
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 206
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03acf36f976522478b2afe14465d6f2
+      internalID: -296088798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 206
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e903a4c19bbce47841616197b82736
+      internalID: -622506927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoIntroSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 206
+        height: 206
+      alignment: 9
+      pivot: {x: 0.6115939, y: 0.2608868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f66b48f163e3a44903361760333a24
+      internalID: 380975512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DinoIntroSheet_0: 1859179312
+      DinoIntroSheet_1: 177471627
+      DinoIntroSheet_10: -587508160
+      DinoIntroSheet_11: -256530042
+      DinoIntroSheet_12: -230411945
+      DinoIntroSheet_13: 1448825012
+      DinoIntroSheet_14: 2108307427
+      DinoIntroSheet_15: 1054084148
+      DinoIntroSheet_16: 523219977
+      DinoIntroSheet_17: 1318320106
+      DinoIntroSheet_18: 1282301975
+      DinoIntroSheet_19: -1544218836
+      DinoIntroSheet_2: -1578913964
+      DinoIntroSheet_20: -1857604996
+      DinoIntroSheet_21: -181900864
+      DinoIntroSheet_22: 365407426
+      DinoIntroSheet_23: -3969151
+      DinoIntroSheet_24: 875541805
+      DinoIntroSheet_25: 573849807
+      DinoIntroSheet_26: 194757384
+      DinoIntroSheet_27: -404247823
+      DinoIntroSheet_28: -296088798
+      DinoIntroSheet_29: -622506927
+      DinoIntroSheet_3: 537136926
+      DinoIntroSheet_30: 380975512
+      DinoIntroSheet_4: 181110811
+      DinoIntroSheet_5: -1238413551
+      DinoIntroSheet_6: -1422559450
+      DinoIntroSheet_7: -1717836089
+      DinoIntroSheet_8: -714364969
+      DinoIntroSheet_9: 168314083
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

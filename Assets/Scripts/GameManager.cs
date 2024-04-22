@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -30,6 +31,8 @@ public class GameManager : MonoBehaviour
     private float restartTimer = 0;
     private int score;
     private int? highscore;
+
+    private bool firstStart = true;
 
     bool Playing() => !hud.retryButton.gameObject.activeSelf && !hud.pressStartText.gameObject.activeSelf;
 
@@ -67,9 +70,13 @@ public class GameManager : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
-                if(restartTimer >= 25)
+                UnityEngine.Debug.Log("WHATTTT!");
+                if(restartTimer >= 30 && firstStart == false)
                 {
                     Restart();
+                } else if(firstStart==true) {
+                    firstStart = false;
+                    FirstStart();
                 }
             }
             //Debug.Log(restartTimer);
@@ -160,6 +167,15 @@ public class GameManager : MonoBehaviour
     {
         hud.retryButton.gameObject.SetActive(true);
         background.enabled = false;
+    }
+
+    private void FirstStart()
+    {
+        background.enabled = true;
+        hud.retryButton.gameObject.SetActive(false);
+        hud.pressStartText.gameObject.SetActive(false);
+        globalSpeedMultiplier = 1;
+        score = 0;
     }
 
     private void Restart()
