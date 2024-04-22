@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ebfa7895a88608347afc76fe52be947e
+guid: 0589ea10aad71ca498a1b36b0efeec55
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DinoIdleV6-Sheet_0
+      name: WifiSheetv2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1236
-        width: 918
-        height: 618
+        x: 15
+        y: 9
+        width: 57
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82af88db193ce8a409538f3ccadab483
-      internalID: 1971972861
+      spriteID: d6fe737ce0b15e24d8685e2f40640af4
+      internalID: 240294490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DinoIdleV6-Sheet_1
+      name: WifiSheetv2_1
       rect:
         serializedVersion: 2
-        x: 918
-        y: 1236
-        width: 918
-        height: 618
+        x: 87
+        y: 9
+        width: 57
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4375b5d8fb77e6e47825eca577e2bc86
-      internalID: -396600049
+      spriteID: 2c7e11baefa1c01469a14c81d488e824
+      internalID: -1024761833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DinoIdleV6-Sheet_2
+      name: WifiSheetv2_2
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 1236
-        width: 918
-        height: 618
+        x: 159
+        y: 9
+        width: 57
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a422e4e31f87524d8347773b91f8103
-      internalID: -1866901452
+      spriteID: 4754460ab0850f847a70552e2ce6bbba
+      internalID: 1340519926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DinoIdleV6-Sheet_3
+      name: WifiSheetv2_3
       rect:
         serializedVersion: 2
-        x: 2754
-        y: 1236
-        width: 918
-        height: 618
+        x: 231
+        y: 9
+        width: 57
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02a048858f36a2b48a121a07924f7adc
-      internalID: -602319943
+      spriteID: c0a337fa60cf3e34cbcd67273bef03c0
+      internalID: 527811109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DinoIdleV6-Sheet_4
+      name: WifiSheetv2_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 618
-        width: 918
-        height: 618
+        x: 303
+        y: 9
+        width: 57
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc1f7c3f7eca14c408dca8b7dca70652
-      internalID: -1947510747
+      spriteID: 92bad409d0a044e4dac96174e3f70fc2
+      internalID: 820828335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DinoIdleV6-Sheet_5
+      name: WifiSheetv2_5
       rect:
         serializedVersion: 2
-        x: 918
-        y: 618
-        width: 918
-        height: 618
+        x: 375
+        y: 9
+        width: 57
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9512da6f95192542a85520ca3795aae
-      internalID: 1850107137
+      spriteID: 472a7158e28786d4e8d70a8c71332eaa
+      internalID: -1596017589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DinoIdleV6-Sheet_6
+      name: WifiSheetv2_6
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 618
-        width: 918
-        height: 618
+        x: 447
+        y: 9
+        width: 57
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe595d8b298e4754096fad118148884d
-      internalID: 1107722513
+      spriteID: 394296d8afb6a2b4cb17895970079c51
+      internalID: 222139414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DinoIdleV6-Sheet_7
+      name: WifiSheetv2_7
       rect:
         serializedVersion: 2
-        x: 2754
-        y: 618
-        width: 918
-        height: 618
+        x: 519
+        y: 9
+        width: 57
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08b5794a50a3d0e4ab6b06db96448db5
-      internalID: 1791784022
+      spriteID: 6356cb754e9bfbb4abb4d563a66f6f1a
+      internalID: 1970112354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DinoIdleV6-Sheet_8
+      name: WifiSheetv2_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 918
-        height: 618
+        x: 591
+        y: 9
+        width: 57
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,71 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5ffcb964de6b5048b1f53f6977d005a
-      internalID: 354948996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DinoIdleV6-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 918
-        y: 0
-        width: 918
-        height: 618
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3bc3c5b85db9761419fffc3e80e18fe1
-      internalID: -200037433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DinoIdleV6-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 1836
-        y: 0
-        width: 918
-        height: 618
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd9555add1989fd4f8e31f22cf1a329f
-      internalID: 311074102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DinoIdleV6-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 2754
-        y: 0
-        width: 918
-        height: 618
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3246712c4ff9e6d488ad4e9855305524
-      internalID: 767278918
+      spriteID: daba8ad832b146a4f9024ab1e343a00c
+      internalID: 1638574183
       vertices: []
       indices: 
       edges: []
@@ -372,18 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DinoIdleV6-Sheet_0: 1971972861
-      DinoIdleV6-Sheet_1: -396600049
-      DinoIdleV6-Sheet_10: 311074102
-      DinoIdleV6-Sheet_11: 767278918
-      DinoIdleV6-Sheet_2: -1866901452
-      DinoIdleV6-Sheet_3: -602319943
-      DinoIdleV6-Sheet_4: -1947510747
-      DinoIdleV6-Sheet_5: 1850107137
-      DinoIdleV6-Sheet_6: 1107722513
-      DinoIdleV6-Sheet_7: 1791784022
-      DinoIdleV6-Sheet_8: 354948996
-      DinoIdleV6-Sheet_9: -200037433
+      WifiSheetv2_0: 240294490
+      WifiSheetv2_1: -1024761833
+      WifiSheetv2_2: 1340519926
+      WifiSheetv2_3: 527811109
+      WifiSheetv2_4: 820828335
+      WifiSheetv2_5: -1596017589
+      WifiSheetv2_6: 222139414
+      WifiSheetv2_7: 1970112354
+      WifiSheetv2_8: 1638574183
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
