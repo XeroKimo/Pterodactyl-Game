@@ -65,21 +65,34 @@ public class IntroSceneAnimation : MonoBehaviour
                 dinoPrefab.transform.Translate(Vector3.right * Time.deltaTime * walkSpeed);
             } else if (StartTransform_Time>timeKeeper)
             {
+                DinoWalking.GetComponent<AudioSource>().Stop();
                 DinoWalking.SetActive(false);
                 wifiAnimator.SetTrigger("Enabled");
                 basicDinoAnimator.SetTrigger("Transform");
                 InternetConnected.gameObject.SetActive(true);
-                Powerup.PlayDelayed(0.3f);
-                Sucking.PlayDelayed(0.6f);
+                //Powerup.PlayDelayed(0.3f);
+                if(!Powerup.isPlaying)
+                {
+                        Powerup.Play();
+                }
+                if(!Sucking.isPlaying)
+                {
+                    Sucking.PlayDelayed(0.2f);
+                }
             } 
             if(MoveInPlayer_Time < timeKeeper && StopMoveInPlayer_Time > timeKeeper) {
+                Powerup.Stop();
                 //Sucking.Play();
+                if(!Sucking.isPlaying)
+                {
+                    Sucking.Play();
+                }
                 InternetConnected.gameObject.SetActive(false);
                 playerPrefab.transform.Translate(Vector3.right * Time.deltaTime * 5.0f);
                 TitleScreen.gameObject.SetActive(true);
             }
             if(Wait_Time<timeKeeper) {
-                Debug.Log("Changing Scenes");
+                //Debug.Log("Changing Scenes");
                 startScene = false;
                 SceneManager.LoadScene("SampleScene");
             }

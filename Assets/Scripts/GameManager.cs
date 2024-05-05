@@ -58,10 +58,10 @@ public class GameManager : MonoBehaviour
             GameOver();
         };
 
-        hud.retryButton.onClick.AddListener(() =>
+        /*hud.retryButton.onClick.AddListener(() =>
         {
             Restart();
-        });
+        });*/
     }
 
     private void Update()
@@ -71,16 +71,17 @@ public class GameManager : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 UnityEngine.Debug.Log("WHATTTT!");
-                if(restartTimer >= 30 && firstStart == false)
+                if(restartTimer >= 2.3f && firstStart == false)
                 {
                     Restart();
-                } else if(firstStart==true) {
+                } else if(restartTimer >= 2.3f && firstStart==true) {
+                    restartTimer = 0.0f;
                     firstStart = false;
                     FirstStart();
                 }
             }
-            //Debug.Log(restartTimer);
-            restartTimer +=  Time.fixedDeltaTime;
+            //UnityEngine.Debug.Log(restartTimer);
+            restartTimer +=  Time.smoothDeltaTime;
         }
         else
         {
@@ -180,7 +181,7 @@ public class GameManager : MonoBehaviour
 
     private void Restart()
     {
-        restartTimer = 0;
+        restartTimer = 0.0f;
         //Debug.Log("Restarting");
         background.enabled = true;
         hud.retryButton.gameObject.SetActive(false);
